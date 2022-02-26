@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Music Player Design</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/all.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+
+		<div class="audioPlayer">
+			
+			<h3>
+				<span id="selectMusicNumber">1</span> 
+				 / 
+				<span id="listMusicNumber">1</span>
+			</h3>
+
+			<div id="coverDiv" class="imagesDiv">
+				<img id="musicImages" src="">
+				<video id="videoCover" loop>
+					<source src="video/bg.mp4" type="video/mp4">
+				</video>
+			</div>
+
+			<h1 id="audioName"></h1>
+			<h2 id="audioVarsion"></h2>
+
+			<div id="audioTimeLine" class="audioTimeLine">
+				<input id="timeLine" type="range" min="0" max="100">
+				<span id="liveTime" class="raningTime">0:00</span>
+				<span id="endTime" class="endTime">0:00</span>
+			</div>
+
+			<ul>
+				<li id="voliumBtn">
+					<i class="fa-solid fa-volume-high"></i>
+				</li>
+				<li id="privBtn"><i class="fa-solid fa-backward-step"></i></li>
+				<li class="playBtn">
+					<i id="playBtn" class="fa-solid fa-play"></i>
+					<i id="pauseBtn" class="fa-solid fa-pause"></i>
+				</li>
+				<li id="nextBtn"><i class="fa-solid fa-forward-step"></i></li>
+				<li id="rePost"><i class="fa-solid fa-right-left"></i></li>
+			</ul>
+
+		</div>
+
+		<audio id="audioSelct">
+			<source src="" type="audio/mp3">
+		</audio>
+
+
+
+
+
+	<script src="js/storage.js"></script>
+	<script src="js/castom.js"></script>
+	</body>
+</html>
